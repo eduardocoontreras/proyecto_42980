@@ -1,0 +1,180 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /*falta elegir fuentes de texto*/
+}
+
+ .padreNavHeader{
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    background-color: rgb(38, 37, 37);
+ }
+
+ .contenedorLogo{
+    width: 200px;
+    display: flex;
+ }
+
+ .contenedorLogo a img{
+    width: 100%;
+ }
+ 
+ .listaNav{
+    list-style: none;
+ }
+ .listaItem{
+    display: inline-block;
+    padding-right: 5rem;
+    padding-top: 2rem;
+ }
+
+ .listaItem a{
+    text-decoration: none
+    color black;
+ }
+
+ .colorBlanco{
+    color: white;
+ }
+
+ .colorAzul{
+    color: rgb(31, 31, 240);
+ }
+ .padreBanner{
+   height: 70vh;
+   background-color: green;
+
+
+ }
+
+ .contenedorImgBanner{
+    width: 100%;
+    height: 100%;
+    background-image: url('../assets/imagenes/agencia.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+
+    justify-content: center;
+    align-items: flex-end;
+    padding-bottom: 3rem;
+ }
+.botonMiraNuestroStock{
+   display: inline-block;
+   width: 200px;
+   border-radius: 5px;
+   border: 1px solid black;
+   font-size: 1.5rem;
+   background-color: blue;
+   text-align: center;
+
+}
+.contenedorTitulosPrincipales{
+   text-align: center;
+   width: 60%;
+   margin: 0 auto;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+.contenedorTitulosPrincipales h1{
+   font-size: 3rem;
+   margin-bottom: 3rem ;
+}
+ .galeria{
+   width: 85%;
+   margin: 0 auto;
+
+   gap: 3rem;
+   display: flex;
+   justify-content: space-evenly;
+   flex-wrap: wrap;
+ } 
+
+ .galeria .agenciaGaleria{
+   width: 350px;
+    height: 350px;
+    border-radius: 10px;
+    background-color: blue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 2rem;
+ }
+
+ .agenciaGaleria img{
+   width: 100%;
+   height: 50%;
+   object-fit: cover;
+   border-radius: 10px;
+ }
+
+ .opinion h2 {
+   margin-top: 3rem;
+   margin-bottom: 3rem;
+   text-align: center;
+ }
+
+ .galeriaOpinion{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   gap: 3rem;
+ }
+
+ .hijoGaleriaOpinion{
+   width: 20%;  
+   height: 50vh;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;  
+
+ }
+
+ .hijoGaleriaOpinion img{
+   width: 150px;
+   height: 150px;
+   object-fit: cover;
+   border-radius: 50%;
+ }
+
+ .footer{
+   height: 30vh;
+   background-color: gray;
+
+ }
+
+ @media screen and (min-width: 0px) and (max-width: 768px) {
+   .padreNavHeader{
+      flex-direction: column;
+      height: initial;
+   }
+   
+   .contenedorLogo a img{
+      width: 80%;
+      align-items: center;
+   }
+   .navHeader{ 
+      width: 100%;
+   }
+   .listaItem{
+      display: block;
+      text-align: center;
+   }
+   .listaItem a{
+      font-size: 1.5 rem;
+   }
+
+   .galeriaOpinion{
+      flex-direction: column;
+   }
+   .hijoGaleriaOpinion{
+      width: 80%;
+      height: initial;
+   }
+ }
